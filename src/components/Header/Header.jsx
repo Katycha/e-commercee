@@ -1,7 +1,31 @@
 import HeaderDesktop from "./HeaderDesktop";
 import HeaderMobile from "./HeaderMobile";
 
+export const NAVIGATIONS = [
+  {
+    href: "/home",
+    title: "Home",
+  },
+  {
+    href: "/product",
+    title: "Product",
+  },
+  {
+    href: "/pricing",
+    title: "Pricing",
+  },
+  {
+    href: "/contact",
+    title: "Contact",
+  },
+  {
+    href: "/team",
+    title: "Team",
+  },
+];
+
 const Header = () => {
+ 
   return (
     <>
     <HeaderMobile/>

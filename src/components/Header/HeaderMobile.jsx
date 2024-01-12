@@ -9,6 +9,8 @@ import {
 } from "@mui/material";
 import { Menu, Search, ShoppingCart } from "lucide-react";
 import { useState } from "react";
+import { NAVIGATIONS } from "./Header";
+import {Link} from "@mui/material";
 
 const HeaderMobile = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -35,18 +37,20 @@ const HeaderMobile = () => {
       </header>
       <Collapse in={openMenu}>
         <List>
-          <ListItem className="tw-text-center">
-            <ListItemText primary="Home" className="tw-text-[#737373]" />
-          </ListItem>
-          <ListItem className="tw-text-center">
-            <ListItemText primary="Product" className="tw-text-[#737373]" />
-          </ListItem>
-          <ListItem className="tw-text-center">
-            <ListItemText primary="Pricing" className="tw-text-[#737373]" />
-          </ListItem>
-          <ListItem className="tw-text-center">
-            <ListItemText primary="Contact" className="tw-text-[#737373]" />
-          </ListItem>
+          {NAVIGATIONS.map((item) => (
+            <Link
+              key={item.title}
+              href={item.href}
+              className="tw-no-underline hover:tw-cursor "
+            >
+              <ListItem className="tw-text-center" LinkComponent={Link}>
+                <ListItemText
+                  primary={item.title}
+                  className="tw-text-[#737373] hover:tw-text-[#424242]"
+                />
+              </ListItem>
+            </Link>
+          ))}
         </List>
       </Collapse>
     </>
