@@ -42,7 +42,7 @@ const Post = () => {
 
   return (
     <div className="post">
-      <Image src={photos} alt="post 1" />
+      <Image src={Post1} alt="post 1" />
       <Tabs value={activeTab} onChange={handleTabChange}>
         <Tab label="Google" {...a11yProps(0)} />
         <Tab label="Trending" {...a11yProps(1)} />

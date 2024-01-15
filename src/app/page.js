@@ -1,7 +1,17 @@
 import ProductCard from "@/components/ProductCard/ProductCard";
 import Image from 'next/image';
-import Photo1 from "@/assets/product-cover-5.png";
+import Photo1 from "@/assets/product-cover-1.png";
+import Photo2 from "@/assets/product-cover-2.png";
+import Photo3 from "@/assets/product-cover-3.png";
+import Photo4 from "@/assets/product-cover-4.png";
+import Photo5 from "@/assets/product-cover-5.png";
+import Photo6 from "@/assets/product-cover-6.png";
+
+
 import Posts from "./(components)/Posts";
+import VitaClassic from "@/components/VitaClassic/VitaClassic";
+import Part from "@/components/Part/Part";
+import Footer from "@/components/Footer/Footer";
 
 const products = [
   {
@@ -18,7 +28,7 @@ const products = [
     category: "English Department",
     price: 16.48,
     discountPrice: 6.48,
-    photo: Photo1,
+    photo: Photo2,
   },
   ,
   {
@@ -27,7 +37,7 @@ const products = [
     category: "English Department",
     price: 16.48,
     discountPrice: 6.48,
-    photo: Photo1,
+    photo: Photo3,
   },
   ,
   {
@@ -36,7 +46,7 @@ const products = [
     category: "English Department",
     price: 16.48,
     discountPrice: 6.48,
-    photo: Photo1,
+    photo: Photo4,
   },
   ,
   {
@@ -45,7 +55,7 @@ const products = [
     category: "English Department",
     price: 16.48,
     discountPrice: 6.48,
-    photo: Photo1,
+    photo: Photo5,
   },
   ,
   {
@@ -54,7 +64,7 @@ const products = [
     category: "English Department",
     price: 16.48,
     discountPrice: 6.48,
-    photo: Photo1,
+    photo: Photo6,
   },
   ,
   {
@@ -71,7 +81,7 @@ const products = [
     category: "English Department",
     price: 16.48,
     discountPrice: 6.48,
-    photo: Photo1,
+    photo: Photo3,
   },
 ];
 
@@ -91,7 +101,10 @@ export default function Home() {
           ))}
         </div>
       </section>
+      <VitaClassic/>
+      <Part/>
       <Posts/>
+      <Footer/>
     </main>
   );
 }

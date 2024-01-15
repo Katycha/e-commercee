@@ -1,7 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import Photo from "@/assets/product-cover-5 (6).png";
+import Photo from "@/assets/product-cover-6.png";
+
 import { Button } from "@mui/material";
 
 const ProductCardMobile = () => {

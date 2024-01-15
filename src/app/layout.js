@@ -4,6 +4,7 @@ import CallToAction from "@/components/CallToAction";
 import HeroMobile from "@/components/HeroMobile";
 import HeroDesctop from "@/components/HeroDesctop";
 import Header from "@/components/Header/Header";
+import EditorsPick from "@/components/EditorsPick/EditorsPick";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -24,6 +25,7 @@ export default function RootLayout({ children }) {
         <Header/>
         <HeroMobile/>
         <HeroDesctop/>
+        <EditorsPick/>
         {children}
       </body>
     </html>
