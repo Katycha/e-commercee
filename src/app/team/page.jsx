@@ -4,6 +4,11 @@ import axios from "axios";
 const TeamPage = async () =>{
   const response = await axios.get("https://dummyjson.com/users");
   const {users} = response.data;
+
+  if(!response) {
+    return notFound();
+  }
+  
   return (
     <div className="tw-flex tw-flex-col tw-items-center">
       <div className="tw-flex tw-flex-col">

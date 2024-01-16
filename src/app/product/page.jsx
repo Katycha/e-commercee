@@ -1,11 +1,6 @@
 import Image from "next/image";
 import First from "@/assets/product-cover-5.png";
-import Second from "@/assets/product-cover-5 (1).png";
-import Third from "@/assets/product-cover-5 (2).png";
-import Fourth from "@/assets/product-cover-5 (3).png";
-import Fifth from "@/assets/product-cover-5 (4).png";
-import Sixth from "@/assets/product-cover-5 (5).png";
-import Seventh from "@/assets/product-cover-5 (6).png";
+
 
  <div className="tw-flex tw-flex-col tw-justify-center tw-items-center tw-gap-y-3">
    <Image src={First} alt="product" priority />
